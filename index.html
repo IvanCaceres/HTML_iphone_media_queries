@@ -1,0 +1,164 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Victorine - Coming Soon!</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <style>
+html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lineup {
+position:absolute;
+bottom:6%;
+left:2.4%;
+}
+
+#mail {
+padding-left:14px;
+padding-bottom:10px;
+}
+
+#pad {
+padding-bottom:10px;
+padding-left:8px;
+}
+
+#pin {
+padding-bottom:13px;
+padding-left:8px;
+}
+#tumblr {
+padding-left: 10px;
+padding-bottom: 11px;
+}
+
+#logo {
+position: absolute;
+top: 3.4%;
+left: 4%;
+}
+
+#like {
+position: relative;
+top: -17px;
+left: 8px;
+}
+
+@media only screen and (max-device-width:568px) and (orientation:landscape) {
+html { 
+  background: url(bg_ip5l.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+	#fb {
+	position: absolute;
+	bottom: 6.9%;
+	right: 29%;
+	}
+
+	#tw {
+	position: absolute;
+	right: 23%;
+	bottom: 6.9%;
+	}
+	}
+
+@media only screen and (max-device-width:568px) and (orientation:portrait) {
+
+	html { 
+  background: url(bg_ip5p.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	
+	#logo {margin-left:-3%;}
+	
+	}
+
+@media only screen 
+and (min-device-width: 319px) and (max-device-height: 481px) and (orientation:portrait){
+    html { 
+  background: url(bg_ip4p.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}	
+	
+
+	
+} 
+
+
+@media only screen 
+and (min-device-width: 319px) and (max-device-height: 481px) and (orientation:landscape){
+    
+	 }		
+</style>
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+</head>
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <header>
+  </header>
+  <div role="main">
+  
+  </div>
+	<img src="victorinelogonew.png" id="logo"/>
+	<div id="lineup">
+	<img src="slogan.png" id="slogan"/>
+	<a href="mailto:info@victorinenyc.com" target="new"><img id="mail" src="mail.png" /></a>
+	<a href="https://twitter.com/victor_ine" target="new"><img id="pad" src="twitter.png" /></a>
+	<a href="http://pinterest.com/victorinenyc/" target="new"><img id="pin" src="pinterest.png" /></a>
+	<a href="http://victor-ine.tumblr.com/" target="new"><img id="tumblr" src="tumblr.png" /></a>
+	<a href="https://www.facebook.com/victorinenyc" target="new"><img id="pad" src="fb.png" /></a>
+	<div class="fb-like" id="like" data-href="http://www.facebook.com/victorinenyc" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false"></div>
+	</div>
+	<footer>
+  </footer>
+</div>
+
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+
+</body>
+</html>
